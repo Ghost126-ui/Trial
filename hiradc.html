@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/37cb5ab9eb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Risk Assessment-HIRADC</title>
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="navbar">
+        <div class="nav-start">
+          <a class="logo" href="index.html">
+            <img
+              src="LOGO 2@300x.png"
+              width="35"
+              height="35"
+              alt="Safore Logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                Formulir
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfji9jQajowgYBTtzR31eQPXskCfo6Yz1jkvZyzuTrbEkRDrg/viewform?usp=send_form">
+                        <img src="safety2.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Live Audit</span>
+                          <p>Unggah Laporan Hasil Live Audit di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://forms.zohopublic.com/estiningtyas66/form/JOBSAFETYOBSERVATION/formperma/6iQt3LGqfD0RRNjNK6T3-H_C0qnxwetHpPzVV_s5uK0">
+                        <img src="worker.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Job Safety Observations</span>
+                          <p>Unggah Laporan JSO di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://csms.plnnusantarapower.co.id/">
+                        <img src="safety.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">CSMS</span>
+                          <p>Unggah CSMS di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd6zAh16hcy5xGQd_qHdd88TRWOepRkinMAyZiau801dq5ObQ/viewform">
+                        <img src="patgab.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Patroli Gabungan</span>
+                          <p>Unggah Laporan Patroli Gabungan di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li class="dropdown-title">
+                      <span class="dropdown-link-title">Part of <span style="font-family:Lato; color:#00a5ab;"> <span style="font-family:Lato; color: #004066;">BU</span>MN</span></span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="data-protection_9782589.png" style="width: 20px; height: 20px;"/>
+                        Amanah
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="management_769215.png" style="width: 20px; height: 20px;"/>
+                        Kompeten
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="hug_838604.png" style="width: 20px; height: 20px;" />
+                        Harmonis
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="validation_10733324.png" style="width: 20px; height: 20px;" />
+                        Loyal
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="developing_4536776.png" style="width: 20px; height: 20px;" />
+                        Adaptif
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="/">
+                        <img src="collaborate_7829192.png" style="width: 20px; height: 20px;" />
+                        Kolaboratif
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="discover"
+                >
+                  Edukasi
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Dokumen</span>
+                    </li>
+                    <li role="menuitem">
+                        <a class="dropdown-link" href="regulasi.html">Regulasi K3</a>
+                      </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="instruksi.html">Instruksi Kerja</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="hiradc.html"
+                        >HIRADC</a
+                      >
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Pelatihan</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://drive.google.com/file/d/1ZhIJY9kCqhTFsszZ4tDe4bt90t-yNIlJ/view?usp=drive_link"
+                        >Safety Induction</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://drive.google.com/file/d/1dKKjnO2TlAoYkP_J5hdpHFGYe3UIlT4t/view?usp=drive_link">Simulasi</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dashboard">
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown3"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse">
+                Dashboard <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown3" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://app.powerbi.com/view?r=eyJrIjoiMjM4MjJlYjctYWEwZC00ZmZiLWE0MGItNWZiZTU0ZGYyNjE5IiwidCI6IjhkMTg1MzQwLTk2NjYtNGQyYi04MjNhLTJjZTc1OTgxZDIwMyIsImMiOjEwfQ%3D%3D">
+                        <img src="pmm.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Project Mapping Management</span>
+                          <p>Monitoring Area Pekerjaan di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://app.powerbi.com/view?r=eyJrIjoiYzk0Y2JmOTQtNDRlMi00YWNkLWI1OGUtZTdjNjI2MWZkYzg2IiwidCI6IjhkMTg1MzQwLTk2NjYtNGQyYi04MjNhLTJjZTc1OTgxZDIwMyIsImMiOjEwfQ%3D%3D">
+                        <img src="hc.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Health Center</span>
+                          <p>Monitoring Kesehatan Karyawan di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://app.powerbi.com/view?r=eyJrIjoiNTYwMWY0MGQtMGJmNy00MmIyLTlmYWEtM2YxZmQ1NDNjNzVlIiwidCI6IjhkMTg1MzQwLTk2NjYtNGQyYi04MjNhLTJjZTc1OTgxZDIwMyIsImMiOjEwfQ%3D%3D">
+                        <img src="cms.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Certification Management System</span>
+                          <p>Monitoring Validasi Sertifikat di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://app.powerbi.com/view?r=eyJrIjoiNWE2MmZkODktYjcwOS00YjM3LTlmYWMtN2M3OTI4ZmMyYzAzIiwidCI6IjhkMTg1MzQwLTk2NjYtNGQyYi04MjNhLTJjZTc1OTgxZDIwMyIsImMiOjEwfQ%3D%3D">
+                        <img src="fpswms.png" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">FPS Wellness Management System</span>
+                          <p>Monitoring Kesiapan FPS di sini</p>
+                        </div>
+                      </a>
+                    </li>
+                </div>
+              </li>
+              <li><a class="nav-link" href="buletin.html">Newsroom</a></li>
+              <li><a class="nav-link" href="https://forms.gle/oBpTaB2R6sYuxaun7">Tanya Dokter</a></li>
+              <li><a class="nav-link" href="tel:+6281806946614">Emergency Response</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-end">
+          <div class="right-container">
+            <h1 class="title" style="font-size: 34px; margin-right: -2vw;">Safore</h1>
+            <i class="ph ph-x" style="padding-right: 0vw; font-weight: 700; font-size: 20px;"></i>
+            <div class="img-pln">
+              <img src="Logo PLN Nusantara Power Hirest.png" style="width: 150px; border-radius: 0px;">
+            </div>
+          </div>
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          <i class="ri-menu-4-fill" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="intro">
+          <p class="company">Safore</p>
+          <p class="tagline">"Multiplatform digital yang dikembangkan untuk memudahkan dan meningkatkan implementasi K3 karyawan di PT PLN Nusantara Power UP Tanjung Awar Awar"</p>
+          <p class="support"> Supported by K3 Department PT PLN Nusantara Power Tanjung Awar-awar</p>
+      </div>
+  </section>
+  <section class="regulasi-hero">
+      <h4>Zero Accident Bersama Safore</h4>
+      <p><span class="text-underline">HIRADC atau biasa disebut <i>Hazard Identification Risk Assessment and Determine Control</i> merupakan proses mengidentifikasi bahaya, mengukur, dan mengevaluasi risiko yang muncul dari sebuah bahaya yang dapat terjadi dalam aktifitas rutin ataupun non rutin dalam perusahaan, untuk selanjutnya dilakukan penilaian risiko dari bahaya tersebut. Hasil dari penilaian resiko tersebut berguna untuk membuat program pengendalian bahaya agar perusahaan dapat meminimalisasi tingkat resiko yang mungkin terjadi sehingga dapat mencegah terjadinya kecelakaan kerja.</span> Kami menggabungkan dokumen HIRADC yang dijalankan dalam proses bisnis dan produksi <span class="text-underline">PT PLN Nusantara Power UP Tanjung Awar-awar.</span> Untuk informasi detail, anda bisa langsung merujuk ke dokumen HIRADC-nya.  Silahkan anda berikan masukkan terkait HIRADC yang ditampilkan dan akan coba kami perbarui selanjutnya.</p>
+  </section>
+  <main class="table-content">
+      <section class="table-hero">
+          <div class="table-header">
+              <h2>Daftar Dokumen HIRADC</h2>
+          </div>
+      <div class="table-body" style="overflow-x: auto;">
+      <table>
+          <thead>
+              <tr>
+                  <th>No</th>
+                  <th>HIRADC</th>
+                  <th>Ditinjau</th>
+                  <th>Keterangan</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td width="5%">1</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC WAREHOUSE</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1CYvhu6dWfFjcbR4-3ZnC8vcji67_75w-&export=download&authuser=0&confirm=t&uuid=5be9516b-6ddf-48a6-9eeb-5246a22606d9&at=APZUnTWLYI_UjcCty61ulxermASr:1698906168864" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">2</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC BOILER 4-9 & CCR</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1qIRVWV2mbVAXlO02o35kP5zLtPycsIbA&export=download&authuser=0&confirm=t&uuid=c7cca56f-8cbf-433e-a07f-e5ee345fa4b3&at=APZUnTXoN7DNA-tTfYDF1kNjWpca:1698906177488" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">3</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC CBM</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1jMUKu17Bg6EpnSm1ozgQXHou7ypLJJbW&export=download&authuser=0&confirm=t&uuid=51ecfc06-41f3-4621-9516-dd46d9e84448&at=APZUnTUmewl-v7bw_NsI1kyjHRiu:1698906191577" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">4</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC CHCB - ASH HANDLING SYSTEM</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1tngdomNjNELwjB65PKflE-qM8DBskhVw&export=download&authuser=0&confirm=t&uuid=32a5f3fd-e2c9-4d38-bb2d-7310191f248f&at=APZUnTUzICSxf6WV5__UVAkIwwYc:1698906195147" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">5</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC CHCB - EXCAVATOR, WHEEL LOADER, BOB CAT, BULLDOZER,SR,SU</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1oDrtCFwS9EzE_gutGC6s1DTAlJF0lE1o&export=download&authuser=0&confirm=t&uuid=0036fefb-40eb-4a2c-b1ab-8d2addec57cc&at=APZUnTWdkvdYPiU8GopmtuwxUQR4:1698906207417" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">6</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC CHCB - FOB SYSTEM, ERH,TT1,TT2</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1jagW_Ny5O1VGz9RoQrFcS1syzjfrk-5R&export=download&authuser=0&confirm=t&uuid=0f42b993-ae07-4ccd-9f92-55995d529dc8&at=APZUnTWfWUE_xL9FUlafgyb6EuSG:1698906212690" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">7</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC COMPONENT ANALYS - ADMIN BUILDING & ALL AREA</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1OiLSBXNvax-KasAfjCa0NDCkEuxrHhoV&export=download&authuser=0&confirm=t&uuid=9458946d-48f2-425a-8193-71117a3b16ae&at=APZUnTUr02k51gHkP12gJTP7hicp:1698926754424" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">8</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC MMK - RUANG KERJA MMK LT 3, ADMIN BUILDING</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1NYXlsBRWX2klhaO-ocfcbsE0r6Zb_vXO&export=download&authuser=0&confirm=t&uuid=aa5da21f-fb2c-4cb5-a2ce-7c948830a683&at=APZUnTU8xWURRdqL7jN6EYSCFDqY:1698906239556" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">9</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC MRK - RUANG KERJA MRK LT 3, ADMIN BUILDING</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">26 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1IauC8jKLsLJuq9ZnbucShnWQPEhZdlUe&export=download&authuser=0&confirm=t&uuid=da64530b-aced-4c76-b305-ca7f5813c0eb&at=APZUnTWjmv2Wc-b4j5Eg-TbtR2L8:1698906240784" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">10</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC SO BOILER - GEDUNG ADMIN & BOILER</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1oz0hlEQj" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">11</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC SO COAL - COAL HANDLING</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1D5iWXeq3BeE9wblNrHBa-vyq9jb91-IJ&export=download&authuser=0&confirm=t&uuid=cb1afd04-c2e3-4741-a29e-b6d2f755892b&at=APZUnTW45fcawlj72I36-2M3ju6n:1698906244476" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">12</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC SO TURBIN - TURBINE & AUX</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=17W-0Aob5OJ46-uOlDARhMyLeePd9TLsh&export=download&authuser=0&confirm=t&uuid=fd13a113-e5be-459b-9b80-2a5523111c51&at=APZUnTXiBz0kYFYFNF62KuPuatJb:1698906248554" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">13</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC I&C - COAL HANDLING AREA</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1xb--RPvMI8-7vgsYHN0AzWzXx3rZhcTU&export=download&authuser=0&confirm=t&uuid=0cbde635-e77d-47ac-9acc-e3e470ad7197&at=APZUnTV2UQia5JLa7FJ2mSHEFgBv:1698906250361" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">14</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC INVENTORY CONTROL</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1_vxfnNSRcua7TyX6soTJaHdB1ym8or-_&export=download&authuser=0&confirm=t&uuid=d646f9e9-d184-4192-a205-cc20ba90baeb&at=APZUnTXYGc3mt_v1uYowBcOFhXOP:1698906253275" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">15</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC K3 1</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1csWQpYvt5QAgoPbVEOEBvMnSKYkraHZ8&export=download&authuser=0&confirm=t&uuid=c6b9c244-9c77-4351-a7d0-97cb236484b8&at=APZUnTU6ynju_WGA8os-wb-RB_d1:1698906258085" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">16</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC K3 2</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1vvd_3L_a5r5UUNQjyvqSlnfkQN9rzBNS&export=download&authuser=0&confirm=t&uuid=76dcd454-e346-46a7-a9bc-9d1d125825bb&at=APZUnTXAPGze3LV9hxpyvH3S6RDE:1698906263321" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">17</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC KEUANGAN</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1JeT_GYDj8vWu4aEE8peFLO8h_BKB9i14&export=download&authuser=0&confirm=t&uuid=4abf3063-a1c1-4977-a77c-e1ae341c76a3&at=APZUnTVV6xsegB_gEPRZKAMz-1yF:1698906269788" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">18</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC LABORATORIUM & KIMIA</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=13HaPhTbiD9Ag8EAkVQFa7p2L1zN87oY-&export=download&authuser=0&confirm=t&uuid=23288d4e-cd23-4e6c-8fb6-caf4e8e9d2a6&at=APZUnTU5IU35CYM4EmeJI98HHxRd:1698906273895" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">19</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC LINGKUNGAN - CEROBONG PLTU</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1ZGffPIwlnor1ZwDxmYsGV8Mo6kDQaQT0&export=download&authuser=0&confirm=t&uuid=9be22503-0e6d-43a7-bc86-86eb7278cf86&at=APZUnTW48hs2joEZL7nJ_UeTgWf1:1698914172757" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">20</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC LISTRIK - COAL HANDLING</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1jvRYs6DnjI0l-8OQ0nS7S5kgaz9ihkG5&export=download&authuser=0&confirm=t&uuid=0a789c28-3c65-4072-97cb-438ac83e6553&at=APZUnTX5p0ugg5IdseszXmxp9kkK:1698914591296" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">21</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC MESIN 1</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1tQhNAD_sE16xbvIXIxrNHGu3HFrc9NjF&export=download&authuser=0&confirm=t&uuid=cf795597-abf1-4c73-81d5-0fb99f7df790&at=APZUnTWcJ4MJPhpjXWjI7-gPYo_t:1698914596013" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">22</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC MESIN 2</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1zxsVp9pLlc9vYw_OGzsXMijAOKqbiC-W&export=download&authuser=0&confirm=t&uuid=441b84bf-f6f8-4c63-bc72-5d07f5e2ac27&at=APZUnTX9zgjNhUoK8E2OqOk7zQpn:1698914735376" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">23</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC BAHAN BAKAR DAN NIAGA</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1vU8H0xWSCiXSG3QYEVBfABGKMVrXSUsp&export=download&authuser=0&confirm=t&uuid=e58e4ac6-1e26-4e8e-b85e-a8715b581860&at=APZUnTUYxBy0BQIrfP9QPqBmJdFv:1698914736821" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">24</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC OUTAGE MANAGEMENT - ADMIN BUILDING & UNIT</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1kZOo2GQ2RbV3uZhcdCk2_ljVkMcth1ON&export=download&authuser=0&confirm=t&uuid=fe68bb5f-3420-4c03-b668-9dddfd668d9d&at=APZUnTXDQ_foqU3aHSkEhH_AlGb5:1698914742268" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">25</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC PENGADAAN - GEDUNG ADMINISTRASI</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1LLyrWPraGCz4U9_o-B6gCaEWvNrHewU-&export=download&authuser=0&confirm=t&uuid=0cf40046-c000-4b53-addd-32cdebf699fa&at=APZUnTUxfbg4HhlEOcDT6FFsc4Mp:1698914743685" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">26</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC RENDAL OPERASI</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1N8AVWH8uUDtVDeglCWiYVFD5TBiusi7o&export=download&authuser=0&confirm=t&uuid=eaefe8a7-1531-4677-96d9-77e38ab9de43&at=APZUnTXsX1cGgOEhf7np_L8mk1hz:1698914745275" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">27</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC SARANA - BOILER</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1860elApXbuKUozfJXYM_jwbnLic1_TwG&export=download&authuser=0&confirm=t&uuid=dfc4461b-94a3-49af-a8f8-9a493107bb70&at=APZUnTV3AYV40UPcyh6BNEKKH15I:1698914746891" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">28</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC SDM - ADMIN BUILDING</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1jchzR8zOJZCMkqu9T-6r_XkAQUew1qYl&export=download&authuser=0&confirm=t&uuid=98774e76-495b-4004-aba6-1b23119854e9&at=APZUnTUH6-YdRCwA4-LaBqhJMZrB:1698914748310" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+  <tr>
+                  <td width="5%">29</td>
+                  <td width="60%">
+                      <h2 class="reg-content">HIRADC OPERASI - TURBIN</h2>
+                  </td>
+                  <td width="30%">
+                      <h2 class="berlaku">27 Juni 2023</h2>
+                  </td>
+                  <td width="15%">
+                      <a href="https://drive.usercontent.google.com/download?id=1C3pO-lZtNrdbrII-31qO2wazTa4ZhH05&export=download&authuser=0&confirm=t&uuid=d7673a6c-1c71-4644-b21b-44082df36ab2&at=APZUnTWWR7afya1bkh17lbnqQ0gq:1698914749656" class="learn-cont">Selengkapnya</a>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+      <tfooter><div class="table-header"></div></tfooter>
+      </section>
+  </main>
+      <footer>
+        <div class="loc">
+          <img src="logo-footer@300x.png" class="footlog";>
+          <h7>Safore</h7>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h8>Alamat <div class="underline"><span></span></div></h8>
+            <p>Jl. Tanjung Awar-Awar, Wadung, Jenu, Tuban, Jawa Timur 62352</p>
+          </div>
+          <div class="col">
+            <h8>Kontak<div class="underline"><span></span></div></h8>
+            <p>Telp. : (0356) 320320</p>
+            <p>Faks. : (0356) 329090</p>
+            <p>info@plnnusantarapower.co.id</p>
+          </div>
+          <div class="col">
+            <h8>Dikelola<div class="underline"><span></span></div></h8>
+            <p>Tim Magang D4 K3 Universitas Sebelas Maret 2023</p>
+            <p>Departemen K3 PT PLN Nusantara Power UP Tanjung Awar-awar</p>
+          </div>
+          <div class="col">
+            <h8>Newsroom<div class="underline"><span></span></div></h8>
+            <form>
+              <i class="ph ph-envelope-simple"></i>
+              <input type="email" placeholder="Enter your email id" required></input>
+              <button type="Submit"><i class="ph ph-paper-plane-right"></i></button>
+            </form>
+            <div class="closer">
+              <a href="https://www.linkedin.com/company/pt-pembangkitan-jawa-bali/"><i class="fa-brands fa-linkedin-in";></i></a>
+              <a href="https://web.facebook.com/plnnusantarapower/?locale=id_ID&_rdc=1&_rdr"><i class="fa-brands fa-facebook-f";></i></a>
+              <a href="https://twitter.com/ptpln_np"><i class="fa-brands fa-x-twitter";></i></a>
+              <a href="https://www.instagram.com/plnnusantarapower/"><i class="fa-brands fa-instagram";></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="hak-cipta"> Safore © 2023. All Rights Reserved</p>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
